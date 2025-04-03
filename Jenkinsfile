@@ -3,26 +3,23 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: ‘main’, url: 'https://github.com/OmkarORR/Assignment2.git'
+                git branch: 'main', url: 'https://github.com/OmkarORR/Assignment2.git'
             }
         }
-
-    stages {
-        stage('bulding ') {
+        stage('Building') {
             steps {
-                echo 'Building '
+                echo 'Building'
             }
         }
-        stage('Testing  ') {
+        stage('Testing') {
             steps {
-                echo 'Testing '
+                echo 'Testing'
             }
         }
         stage('Deploying') {
             steps {
-                echo 'Deploying '
+                echo 'Deploying'
             }
         }
     }
-}
 }
